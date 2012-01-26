@@ -1,0 +1,6 @@
+* Set up an account at Github
+* Put into Github
+* Unit testing
+* Functional test == Acceptance test
+
+* Query from Database
