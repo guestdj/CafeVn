@@ -14,8 +14,20 @@ namespace CafeVN.Controllers
         {
             IList<CoffeeBag> coffeeBags = new List<CoffeeBag>();
 
-            coffeeBags.Add(new CoffeeBag() {Id = 1, Name = "VinaCafe", Price = 4.99, Quantity = 20});
-            coffeeBags.Add(new CoffeeBag(){Id = 2, Name = "Andy's Coffee", Price = 5.99, Quantity = 15});
+            coffeeBags.Add(new CoffeeBag()
+                               {
+                                   Id = 1,
+                                   Name = "VinaCafe", 
+                                   Description = "Vinacafe is great coffee!",
+                                   Price = 4.99, 
+                               });
+            coffeeBags.Add(new CoffeeBag()
+                               {
+                                   Id = 2, 
+                                   Name = "G7", 
+                                   Description = "G7 is also very good - not as sweet",
+                                   Price = 3.99
+                               });
 
             return View(coffeeBags);
         }
