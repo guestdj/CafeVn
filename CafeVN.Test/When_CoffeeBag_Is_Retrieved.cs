@@ -23,10 +23,8 @@ namespace CafeVN.Test
         It should_populate_coffebag = () =>
                                                   {
                                                       cafeVn.Id.ShouldEqual(1);
-                                                      cafeVn.Name.ShouldEqual("CafeVn");
+                                                      cafeVn.Name.ShouldEqual("CafeVN");
                                                   };
-
-
     }
 
     public class CoffeeBagRepository
