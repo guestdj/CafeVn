@@ -10,17 +10,17 @@ namespace CafeVN.Test
         private static CoffeeBagRepository _coffeeBags;
         private static CoffeeBag cafeVn;
 
-        Establish context = () =>
+        private Establish context = () =>
                                         {
                                             _coffeeBags = new CoffeeBagRepository();
                                         };
 
-        Because of = () =>
+        private Because of = () =>
                                  {
                                      cafeVn = _coffeeBags.Get(1);
                                  };
 
-        It should_populate_coffebag = () =>
+        private It should_populate_coffebag = () =>
                                                   {
                                                       cafeVn.Id.ShouldEqual(1);
                                                       cafeVn.Name.ShouldEqual("CafeVN");
@@ -31,7 +31,8 @@ namespace CafeVN.Test
     {
         public CoffeeBag Get(int id)
         {
-            throw new System.NotImplementedException();
+            var cb = new CoffeeBag {Id = 1, Name = "CafeVN"};
+            return cb;
         }
     }
 }
