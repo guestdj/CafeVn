@@ -32,12 +32,9 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Le fav and touch icons -->
 <%--    <link rel="shortcut icon" href="/ico/favicon.ico">--%>
   </head>
-
   <body>
-
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -46,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">Cafe Vietnam</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -62,16 +59,10 @@
 
     <div class="container">
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+        <hr>
+        <footer>
+            <p>&copy; Company 2012</p>
+        </footer>
+    </div>
   </body>
 </html>
